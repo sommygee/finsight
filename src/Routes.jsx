@@ -8,6 +8,10 @@ import MarketExplorerResearchCenter from './pages/market-explorer-research-cente
 import HomepageInvestmentIntelligencePlatform from './pages/homepage-investment-intelligence-platform';
 import PortfolioLaboratory from './pages/portfolio-laboratory-construction-tools';
 import TradingCommandCenter from './pages/trading-command-center-simulation';
+import NavigationLandingPage from './pages/navigation-landing-page';
+import AboutUs from './pages/about-us';
+import Home from './pages/home';
+import ContactSupportHub from './pages/contact-support-hub';
 
 const Routes = () => {
   return (
@@ -16,7 +20,16 @@ const Routes = () => {
       <ScrollToTop />
       <RouterRoutes>
         {/* Define your route here */}
-        <Route path="/" element={<HomepageInvestmentIntelligencePlatform />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact-support-hub" element={<ContactSupportHub />} />
+        <Route path="/investment-plans" element={<NavigationLandingPage />} />
+        <Route path="/blog" element={<NavigationLandingPage />} />
+        <Route path="/login" element={<NavigationLandingPage />} />
+        <Route path="/signup" element={<NavigationLandingPage />} />
+        <Route path="/navigation-landing-page" element={<NavigationLandingPage />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/intelligent-dashboard" element={<IntelligentDashboard />} />
         <Route path="/market-explorer-research-center" element={<MarketExplorerResearchCenter />} />
         <Route path="/homepage-investment-intelligence-platform" element={<HomepageInvestmentIntelligencePlatform />} />
