@@ -26,7 +26,10 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-primary/20 to-transparent animate-pulse-subtle"></div>
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-accent/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
+        <div 
+          className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-float" 
+          style={{ animationDelay: '1s' }}
+        ></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-20">
@@ -46,7 +49,8 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-              Transform your financial future with AI-powered investment insights and professional-grade tools. Make smarter decisions with data-driven intelligence and expert guidance at your fingertips.
+              Transform your financial future with AI-powered investment insights and professional-grade tools. 
+              Make smarter decisions with data-driven intelligence and expert guidance at your fingertips.
             </p>
 
             {/* CTA */}
@@ -60,17 +64,6 @@ const HeroSection = () => {
                   iconPosition="right"
                 >
                   Get Started
-                </Button>
-              </Link>
-              <Link to="/intelligent-dashboard">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-white text-white hover:bg-white/10"
-                  iconName="Play" 
-                  iconPosition="left"
-                >
-                  View Demo
                 </Button>
               </Link>
             </div>

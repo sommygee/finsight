@@ -6,6 +6,8 @@ import HeroSection from './components/HeroSection';
 import MarketTicker from '../homepage-investment-intelligence-platform/components/MarketTicker';
 import PlatformPreview from '../homepage-investment-intelligence-platform/components/PlatformPreview';
 import BenefitsGrid from '../homepage-investment-intelligence-platform/components/BenefitsGrid';
+import InvestmentPlansSection from '../investment-plans/components/Plans';
+import Footer from 'components/ui/Footer';
 
 const Home = () => {
   return (
@@ -22,34 +24,19 @@ const Home = () => {
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <Link 
-                to="/" 
-                className="text-gray-700 hover:text-brand-primary font-medium transition-colors"
-              >
+              <Link to="/" className="text-gray-700 hover:text-brand-primary font-medium transition-colors">
                 Home
               </Link>
-              <Link 
-                to="/about" 
-                className="text-gray-700 hover:text-brand-primary font-medium transition-colors"
-              >
+              <a href="#about" className="text-gray-700 hover:text-brand-primary font-medium transition-colors">
                 About
-              </Link>
-              <Link 
-                to="/contact-support-hub" 
-                className="text-gray-700 hover:text-brand-primary font-medium transition-colors"
-              >
+              </a>
+              <a href="#contact" className="text-gray-700 hover:text-brand-primary font-medium transition-colors">
                 Contact
-              </Link>
-              <Link 
-                to="/investment-plans" 
-                className="text-gray-700 hover:text-brand-primary font-medium transition-colors"
-              >
+              </a>
+              <a href="#pricing" className="text-gray-700 hover:text-brand-primary font-medium transition-colors">
                 Investment Plans
-              </Link>
-              <Link 
-                to="/blog" 
-                className="text-gray-700 hover:text-brand-primary font-medium transition-colors"
-              >
+              </a>
+              <Link to="/blog" className="text-gray-700 hover:text-brand-primary font-medium transition-colors">
                 Blog
               </Link>
             </div>
@@ -57,20 +44,12 @@ const Home = () => {
             {/* Auth Buttons */}
             <div className="flex items-center space-x-4">
               <Link to="/login">
-                <Button 
-                  variant="ghost" 
-                  size="sm"
-                  className="text-gray-700 hover:text-brand-primary"
-                >
+                <Button variant="ghost" size="sm" className="text-gray-700 hover:text-brand-primary">
                   Login
                 </Button>
               </Link>
               <Link to="/signup">
-                <Button 
-                  variant="default" 
-                  size="sm"
-                  className="bg-brand-primary hover:bg-brand-primary/90"
-                >
+                <Button variant="default" size="sm" className="bg-brand-primary hover:bg-brand-primary/90">
                   Sign Up
                 </Button>
               </Link>
@@ -86,17 +65,68 @@ const Home = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section (updated separately: removed demo button, changed Get Started wording) */}
       <HeroSection />
-      
+
       {/* Live Market Ticker */}
       <MarketTicker />
-      
+
       {/* Platform Preview */}
       <PlatformPreview />
-      
+
       {/* Benefits Grid */}
       <BenefitsGrid />
+
+      {/* Pricing Plans */}
+      <section id="pricing">
+        <InvestmentPlansSection />
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-brand-primary mb-6">About Us</h2>
+          <p className="text-gray-600 text-lg leading-relaxed mb-6">
+            At <span className="font-semibold">FinSight</span>, we empower investors with the tools, insights, 
+            and confidence needed to make smarter investment decisions. 
+            Our platform combines advanced analytics with a user-friendly experience.
+          </p>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            With AI-driven insights, real-time data, and expert guidance, 
+            we’re bridging the gap between professional investors and everyday individuals. 
+            Whether you're a beginner or an experienced trader, FinSight is designed to grow with you.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-brand-primary mb-6">Contact Us</h2>
+          <p className="text-gray-600 mb-6">
+            Have questions? Our support team is here to help. 
+            Whether it’s about our services, your account, or partnership opportunities, 
+            we’re just a click away.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <Link 
+              to="/contact-support-hub" 
+              className="inline-block px-6 py-3 bg-brand-primary text-white rounded-lg hover:bg-brand-secondary transition"
+            >
+              Get in Touch
+            </Link>
+            <a 
+              href="mailto:support@finsight.com" 
+              className="inline-block px-6 py-3 border border-brand-primary text-brand-primary rounded-lg hover:bg-brand-primary hover:text-white transition"
+            >
+              Email Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
