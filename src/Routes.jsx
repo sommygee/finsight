@@ -35,6 +35,7 @@ const Routes = () => {
         <Route path="/homepage-investment-intelligence-platform" element={<HomepageInvestmentIntelligencePlatform />} />
         <Route path="/portfolio-laboratory-construction-tools" element={<PortfolioLaboratory />} />
         <Route path="/trading-command-center-simulation" element={<TradingCommandCenter />} />
+        <Route path="/investment-plans" element={<InvestmentPlansPage />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>
