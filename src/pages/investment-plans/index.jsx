@@ -1,11 +1,16 @@
-// src/pages/investment-plans/index.jsx
 import React from "react";
-import PricingPlans from "../../components/PricingPlans";
+import InvestmentHero from "./Hero";
+import InvestmentPlansSection from "./Plans";
+import Footer from "components/ui/Footer";
 
-export default function InvestmentPlansPage() {
+const InvestmentPlansPage = () => {
   return (
-    <div className="pt-20">
-      <PricingPlans showSectionPadding />
+    <div className="flex flex-col min-h-screen">
+      <InvestmentHero />
+      <InvestmentPlansSection />
+      <Footer />
     </div>
   );
-}
+};
+
+export default InvestmentPlansPage;

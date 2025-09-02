@@ -12,6 +12,8 @@ import NavigationLandingPage from './pages/navigation-landing-page';
 import AboutUs from './pages/about-us';
 import Home from './pages/home';
 import ContactSupportHub from './pages/contact-support-hub';
+import InvestmentPlansPage from "./pages/investment-plans";
+
 
 const Routes = () => {
   return (
@@ -24,7 +26,6 @@ const Routes = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact-support-hub" element={<ContactSupportHub />} />
-        <Route path="/investment-plans" element={<NavigationLandingPage />} />
         <Route path="/blog" element={<NavigationLandingPage />} />
         <Route path="/login" element={<NavigationLandingPage />} />
         <Route path="/signup" element={<NavigationLandingPage />} />

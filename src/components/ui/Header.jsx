@@ -27,6 +27,11 @@ const Header = () => {
       name: 'Trading Center',
       path: '/trading-command-center-simulation',
       icon: 'Activity'
+    },
+    {
+    name: 'Investment Plans',
+    path: '/investment-plans',
+    icon: 'DollarSign' 
     }
   ];
 
