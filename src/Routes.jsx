@@ -13,8 +13,8 @@ import AboutUs from './pages/about-us';
 import Home from './pages/home';
 import ContactSupportHub from './pages/contact-support-hub';
 import InvestmentPlansPage from "./pages/investment-plans";
-import SignupPage from "./pages/signup";
-import LoginPage from "./pages/login";
+import SignupPage from "./pages/Signup";
+import LoginPage from "./pages/Login";
 
 const Routes = () => {
   return (
