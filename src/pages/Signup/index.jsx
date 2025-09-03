@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "pages/navigation-landing-page/components/Navigation";
+import Navbar from "../../components/ui/Navbar";
 import Footer from "components/ui/Footer";
 import SignupForm from "./components/SignupForm";
 
@@ -7,7 +7,7 @@ const SignupPage = () => {
   return (
     <>
       {/* Navigation Bar */}
-      <Navigation />
+      <Navbar />
 
       {/* Add space below navbar */}
       <main className="min-h-screen flex flex-col justify-center items-center bg-gray-50 pt-32 pb-16">

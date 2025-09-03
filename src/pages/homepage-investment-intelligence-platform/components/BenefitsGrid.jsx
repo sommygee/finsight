@@ -108,38 +108,28 @@ const BenefitsGrid = () => {
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-brand-primary to-brand-secondary rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Investment Approach?</h3>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Join thousands of investors who have already discovered the power of intelligent investing with FinSight.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/intelligent-dashboard">
-                <Button 
-                  variant="default" 
-                  size="lg" 
-                  className="bg-white text-brand-primary hover:bg-gray-100"
-                  iconName="Rocket" 
-                  iconPosition="left"
-                >
-                  Get Started Free
-                </Button>
-              </Link>
-              <Link to="/market-explorer-research-center">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-white text-white hover:bg-white/10"
-                  iconName="Play" 
-                  iconPosition="left"
-                >
-                  Watch Demo
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
+<div className="text-center mt-16">
+  <div className="bg-gradient-to-r from-brand-primary to-brand-secondary rounded-2xl p-8 text-white">
+    <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Investment Approach?</h3>
+    <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+      Join thousands of investors who have already discovered the power of intelligent investing with FinSight.
+    </p>
+    <div className="flex justify-center">
+      <Link to="/signup">
+        <Button 
+          variant="default" 
+          size="lg" 
+          className="bg-white text-brand-primary hover:bg-gray-100"
+          iconName="Rocket" 
+          iconPosition="left"
+        >
+          Get Started
+        </Button>
+      </Link>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );

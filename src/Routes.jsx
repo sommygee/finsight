@@ -15,6 +15,9 @@ import ContactSupportHub from './pages/contact-support-hub';
 import InvestmentPlansPage from "./pages/investment-plans";
 import SignupPage from "./pages/Signup";
 import LoginPage from "./pages/Login";
+import BlogPage from "./pages/blog";
+import BlogPost from "./pages/blog/BlogPost";
+
 
 const Routes = () => {
   return (
@@ -27,7 +30,6 @@ const Routes = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact-support-hub" element={<ContactSupportHub />} />
-          <Route path="/blog" element={<NavigationLandingPage />} />
           <Route path="/navigation-landing-page" element={<NavigationLandingPage />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/intelligent-dashboard" element={<IntelligentDashboard />} />
@@ -36,6 +38,8 @@ const Routes = () => {
           <Route path="/portfolio-laboratory-construction-tools" element={<PortfolioLaboratory />} />
           <Route path="/trading-command-center-simulation" element={<TradingCommandCenter />} />
           <Route path="/investment-plans" element={<InvestmentPlansPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           
           {/* Auth pages */}
           <Route path="/signup" element={<SignupPage />} />

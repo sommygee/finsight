@@ -1,16 +1,15 @@
 import React from 'react';
-import Navigation from '../navigation-landing-page/components/Navigation';
+import Navbar from "../../components/ui/Navbar"; 
 import MissionSection from './components/MissionSection';
 import TeamSection from './components/TeamSection';
 import CompanyStory from './components/CompanyStory';
 import ValuesGrid from './components/ValuesGrid';
 import StatsSection from './components/StatsSection';
-
+import Footer from "components/ui/Footer";
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation Bar */}
-      <Navigation />
+      <Navbar />
       
       {/* About Us Content */}
       <div className="pt-16">
@@ -29,6 +28,8 @@ const AboutUs = () => {
         {/* Company Story Timeline */}
         <CompanyStory />
       </div>
+       {/* Footer */}
+      <Footer />
     </div>
   );
 };

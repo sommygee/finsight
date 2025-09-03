@@ -3,13 +3,14 @@ import ContactForm from './components/ContactForm';
 import ContactInfo from './components/ContactInfo';
 import FAQSection from './components/FAQSection';
 import LiveChat from './components/LiveChat';
-import Navigation from './components/Navigation';
+import Navbar from "../../components/ui/Navbar"; 
+import Footer from "components/ui/Footer";
 
 const ContactSupportHub = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
-      <Navigation />
+      <Navbar />
       
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-brand-primary to-blue-700 text-white py-20 pt-32">
@@ -43,7 +44,10 @@ const ContactSupportHub = () => {
         <div className="mt-20">
           <FAQSection />
         </div>
+      
       </div>
+        {/*footer */}
+        <Footer />
     </div>
   );
 };

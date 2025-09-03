@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from '../navigation-landing-page/components/Navigation';
+import Navbar from "../../components/ui/Navbar"; 
 import InvestmentHero from "./components/Hero";
 import InvestmentPlansSection from "./components/Plans";
 import Footer from "components/ui/Footer";
@@ -10,7 +10,7 @@ const InvestmentPlansPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navigation Bar */}
-           <Navigation />
+           <Navbar />
            
       {/* Hero Section */}
       <main className="flex-grow">
